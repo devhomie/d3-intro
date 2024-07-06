@@ -27,4 +27,12 @@ data we're exploring.
     - Creating groupings with `g` elements also lets you apply transformations to all the child elements in a group.
       - **SVG** supports several kinds of transformations, including translation, rotation, scaling, and skewing.
       - All the transformations are relative to the origin (0,0) -- unless an earlier translation has moved the origin.
-      - This means the scaling affects the placement of elements, as wel as their size.
+      - This means the scaling affects the placement of elements, as well as their size.
+        - For example:
+          - When you scale a square with a top-left corner of (10, 10) and a bottom-right corner (30, 30) by 2
+          - The new corners will be at (20, 20) and (60, 60)
+          - The x- and y-coordinates relative to the origin are all doubled.
+  
+    #### Drawing Circles
+    - Draw an SVG circle using the `circle` element. 
+      - The attributes `cx` and `cy` set the coordinates for the center of the circle, and `r` sets the radius
