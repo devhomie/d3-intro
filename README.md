@@ -20,4 +20,11 @@ data we're exploring.
     JavaScript to add event handlers to respond to mouse events like clicks or hovers.
         - On the other hand, Canvas-based graphics are faster to render, so applications like games that need a high frame rate tend to use 
         the Canvas API rather than SVG.
-    
+
+  ### Grouping Elements
+    - Group multiple SVG elements together by nesting them inside a `g` (for group) element.
+      - This is useful because any attributes set on the `g` element itself will apply to all its child elements.
+    - Creating groupings with `g` elements also lets you apply transformations to all the child elements in a group.
+      - **SVG** supports several kinds of transformations, including translation, rotation, scaling, and skewing.
+      - All the transformations are relative to the origin (0,0) -- unless an earlier translation has moved the origin.
+      - This means the scaling affects the placement of elements, as wel as their size.
