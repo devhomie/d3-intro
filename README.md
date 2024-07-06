@@ -36,3 +36,18 @@ data we're exploring.
     #### Drawing Circles
     - Draw an SVG circle using the `circle` element. 
       - The attributes `cx` and `cy` set the coordinates for the center of the circle, and `r` sets the radius
+
+  ### Defining Paths
+    - The `path` element is the **most powerful** SVG element of all, allowing you to create custom shapes by drawing straight or curved lines ("path")
+    between different points.
+    - The `d` sttribute of a `path` element (short for *data*) is a string containing the path definition, which is a list of path commands.
+    - The syntax of this string is optimized to be as compact as possible, so complex paths can be represented using relatively short strings
+      - This is good for computers, but not good for humans; don't expect this strings to be easily readable.
+
+    ### The SvgPathEditor
+     - Go to -> https://yqnn.github.io/svg-path-editor/ 
+     - The SVGPathEditor is a very helpful tool for experimenting with and manipulating paths
+        - And for converting between absolute and relative commands
+     - **SVG** has several additional path commands, mostly for drawing various types of curves
+      Find a full list on MDN at -> https://developer.mozilla.org/SVG
+
