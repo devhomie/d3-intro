@@ -96,3 +96,11 @@
       to an individual element on the page (usually an SVG element).
     - You use the **datum** to set some attribute of the element it's bound to, 
       so the element visually reflects the **datum**.
+
+### Data Joins
+ - It would be difficult to always have exactly the right number of SVG elements
+   ready to bind to your data.
+ - D3 solves this problem with the concept of `joins`.
+  - In D3, you use a join to add or remove the necessary elements to match the 
+    data being bound.
+
