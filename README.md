@@ -86,3 +86,13 @@
   parts of the underlying data you want to visualize are linked to individual
   elements on the page.
   - This way, if the data changes, the elements change as well.
+
+### Data binding
+
+ - Perhaps the most important feature of D3 is its concept of **data binding**. 
+ - In a D3-based application, you'll have some data that you're attempting to 
+   visualize.
+    - Each individual piece of the data, called a **datum**, will be bound
+      to an individual element on the page (usually an SVG element).
+    - You use the **datum** to set some attribute of the element it's bound to, 
+      so the element visually reflects the **datum**.
