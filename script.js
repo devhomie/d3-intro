@@ -2,7 +2,7 @@
 let numbers = [3, 2, 1];
 
 function update(data){
-d3.select("svg").selectAll("circle").data(data, d=>d).join("circle").transition().duration(500).attr("cx", (d, i)=> (i+1)*50).attr("cy", 50).attr("r", (d,i) => d * 5);
+d3.select("svg").selectAll("circle").data(data, d=>d).join(enter => enter.append("circle"), update => update, exit => exit.remove()).transition().duration(500).attr("cx", (d, i)=> (i+1)*50).attr("cy", 50).attr("r", (d,i) => d * 5);
   
 }
 

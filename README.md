@@ -111,3 +111,22 @@
    they change.
  - **Transitions** are a useful feature in D3 because, if done right, they allow
    you to see how data evolves.
+
+### Advanced Joins
+ - D3's -join- method has extra options that give you more control over how the
+   visualization responds to changes in the data. When D3 joins new data to an 
+   existing selection, some elements may be updated, some may be added ( for 
+   the case of a new datum with no existing element), and some elements may be
+   removed.
+ - In our case, we've seen how clicking -Prepend- both adds a new element and 
+   updates all the other elements by shifting them to right.
+ - Meanwhile, click -Drop- removes the last element.
+ - In D3 parlance, adding a new element is called an [ enter ], removing an 
+   existing element is called an [ exit ] , and modifying an existing
+   element is called an [ update ].
+ - You can customize the -join- method by passing it three functions that 
+   will be called for each of these three possible element changes.
+ - This way you're able to specify three different behaviors: 
+    1: One for entering elements
+    2: Another for elements that are being updated
+    3: And one for exiting elements
