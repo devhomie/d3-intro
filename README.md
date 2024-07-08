@@ -104,3 +104,10 @@
   - In D3, you use a join to add or remove the necessary elements to match the 
     data being bound.
 
+### Transitions and Key Functions
+
+ - Instead of updating a D3 visualization abruptly with each change in the data,
+   you can use `transitions` to allow elements to animate their attributes as 
+   they change.
+ - **Transitions** are a useful feature in D3 because, if done right, they allow
+   you to see how data evolves.
